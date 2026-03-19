@@ -6,8 +6,8 @@ export function Sidebar() {
   return (
     <Nav>
       <HeaderBox>
-        <Logo>FRINK</Logo>
-        <Subtitle>Query the Proto-OKN</Subtitle>
+        <Logo>Proto-OKN</Logo>
+        <Subtitle>Query the Graphs</Subtitle>
         <Divider sx={{ my: 2 }} />
       </HeaderBox>
 

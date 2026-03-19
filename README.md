@@ -1,12 +1,12 @@
-# FRINK Query UI
+# Proto-OKN Query UI
 
-This repository contains the code for the FRINK Query UI web app, which can be used to query the Theme 1 [Proto-OKN](https://www.proto-okn.net/) knowledge graphs or the FRINK federated knowledge graph.
+This repository contains the code for the Proto-OKN Query UI web app, which can be used to query the Theme 1 [Proto-OKN](https://www.proto-okn.net/) knowledge graphs or the Proto-OKN federated knowledge graph.
 
-- **[FRINK Query UI](https://frink.apps.renci.org)**
-- [FRINK website](https://frink.renci.org/)
-- [Proto-OKN website](https://www.proto-okn.net/)
+- **[Proto-OKN Query UI](https://frink.apps.renci.org)**
+- [Proto-OKN main website](https://www.proto-okn.net/)
+- [Proto-OKN technical website](https://frink.renci.org/)
 
-![A screenshot of the FRINK Query UI](./docs/media/ui-screenshot.png)
+![A screenshot of the Proto-OKN Query UI](./docs/media/ui-screenshot.png)
 
 # Development
 
