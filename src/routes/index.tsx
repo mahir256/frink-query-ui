@@ -78,19 +78,19 @@ function RouteComponent() {
           {
             id: "examples",
             label: "Examples",
-            color: "var(--p-teal-400)",
+            color: "var(--p-violet-400)",
             jsx: <Examples />,
           },
           {
             id: "saved",
             label: "Saved",
-            color: "var(--p-amber-400)",
+            color: "var(--p-fuchsia-400)",
             jsx: <Saved />,
           },
           {
             id: "query",
             label: "Query",
-            color: "var(--p-blue-400)",
+            color: "var(--p-pink-400)",
             jsx: <Query />,
           },
           {
@@ -132,6 +132,14 @@ function RouteComponent() {
               rel="noopener noreferrer"
             >
               Comunica
+            </a>
+            {" "}and{" "}
+            <a
+              href="https://qlever.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              QLever
             </a>
           </small>
         </AttributionText>
