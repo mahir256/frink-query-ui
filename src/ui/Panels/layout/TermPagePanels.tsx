@@ -26,13 +26,13 @@ export function TermPagePanels({ tabs }: PanelsProps) {
     return (
       <WrapperPanelGroup
         autoSaveId="localstorage-term-panels"
-        direction="vertical"
+        direction="horizontal"
       >
         <ResizablePanel defaultSize={30} minSize={10} collapsible={true}>
           <Panel tab={tabs.filter((t) => t.id === "attributes")[0]} />
         </ResizablePanel>
 
-        <Handle horizontal={"true"} />
+        <Handle horizontal={"false"} />
 
         <ResizablePanel defaultSize={80} minSize={10} collapsible={true}>
           <TabsPanel
@@ -57,24 +57,25 @@ interface HandleProps {
 }
 const Handle = styled(PanelResizeHandle)<HandleProps>`
   align-self: center;
-  width: 12px;
+  width: 0.5em;
   border-radius: 6px;
-  height: 64px;
+  height: 90%;
   margin: 0 4px;
   backdrop-filter: blur(2px);
-  background-color: color-mix(in srgb, var(--p-slate-200) 30%, transparent);
+  background-color: #664e96;
   border: 1px solid var(--p-slate-400);
   transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
 
   &[data-resize-handle-active="pointer"],
   &:hover {
-    background-color: color-mix(in srgb, var(--p-slate-500) 20%, transparent);
+    background-color: #664e96;
     border-color: var(--p-slate-500);
     transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
   }
 
   &[data-resize-handle-active="pointer"] {
-    height: 96px;
+    height: 100%;
+    width: 0.75em;
     transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
   }
 
@@ -82,14 +83,14 @@ const Handle = styled(PanelResizeHandle)<HandleProps>`
     horizontal === "true"
       ? `
     & {
-      width: 64px;
-      height: 12px;
+      width: 90%;
+      height: 0.5em;
       margin: 4px 0;
     }
 
     &[data-resize-handle-active='pointer'] {
-      width: 96px;
-      height: 12px;
+      width: 100%;
+      height: 0.75em;
       transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
     }
   `

@@ -93,7 +93,7 @@ function RouteComponent() {
           {
             id: "as-subject",
             label: "As Subject",
-            color: "var(--p-orange-400)",
+            color: "var(--p-purple-400)",
             jsx: (
               <TermPanel
                 querySparql={dedent`
@@ -110,7 +110,7 @@ function RouteComponent() {
           {
             id: "as-object",
             label: "As Object",
-            color: "var(--p-cyan-400)",
+            color: "var(--p-violet-400)",
             jsx: (
               <TermPanel
                 querySparql={dedent`
@@ -127,7 +127,7 @@ function RouteComponent() {
           {
             id: "attributes",
             label: "Attributes",
-            color: "var(--p-indigo-300)",
+            color: "var(--p-fuchsia-300)",
             jsx: (
               <TermPanel
                 querySparql={dedent`
